@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BD542591EF0EDBA00F48C37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD542581EF0EDBA00F48C37 /* AppDelegate.swift */; };
+		6BD5425B1EF0EDBA00F48C37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD5425A1EF0EDBA00F48C37 /* ViewController.swift */; };
+		6BD5425E1EF0EDBA00F48C37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD5425C1EF0EDBA00F48C37 /* Main.storyboard */; };
+		6BD542601EF0EDBB00F48C37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BD5425F1EF0EDBB00F48C37 /* Assets.xcassets */; };
+		6BD542631EF0EDBB00F48C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542611EF0EDBB00F48C37 /* LaunchScreen.storyboard */; };
+		6BD5426E1EF0EDBB00F48C37 /* Kentei_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD5426D1EF0EDBB00F48C37 /* Kentei_iOSTests.swift */; };
+		6BD542791EF0EDBB00F48C37 /* Kentei_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD542781EF0EDBB00F48C37 /* Kentei_iOSUITests.swift */; };
+		6BD5428D1EF0F01300F48C37 /* KenteiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD5428C1EF0F01300F48C37 /* KenteiViewController.swift */; };
+		6BD5428F1EF0F04500F48C37 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD5428E1EF0F04500F48C37 /* ScoreViewController.swift */; };
+		6BD542951EF110CD00F48C37 /* Icon in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542921EF110CD00F48C37 /* Icon */; };
+		6BD542961EF110CD00F48C37 /* kentei.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542931EF110CD00F48C37 /* kentei.csv */; };
+		6BD542971EF110CD00F48C37 /* start.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542941EF110CD00F48C37 /* start.csv */; };
+		6BD542CE1EF110EE00F48C37 /* batsu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542991EF110EE00F48C37 /* batsu.png */; };
+		6BD542CF1EF110EE00F48C37 /* batsu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD5429A1EF110EE00F48C37 /* batsu@2x.png */; };
+		6BD542D01EF110EE00F48C37 /* btn_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD5429B1EF110EE00F48C37 /* btn_off.png */; };
+		6BD542D11EF110EE00F48C37 /* btn_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD5429C1EF110EE00F48C37 /* btn_off@2x.png */; };
+		6BD542D21EF110EE00F48C37 /* btn_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD5429D1EF110EE00F48C37 /* btn_on.png */; };
+		6BD542D31EF110EE00F48C37 /* btn_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD5429E1EF110EE00F48C37 /* btn_on@2x.png */; };
+		6BD542D41EF110EE00F48C37 /* fbOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD5429F1EF110EE00F48C37 /* fbOff.png */; };
+		6BD542D51EF110EE00F48C37 /* fbOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542A01EF110EE00F48C37 /* fbOff@2x.png */; };
+		6BD542D61EF110EE00F48C37 /* fbOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542A11EF110EE00F48C37 /* fbOn.png */; };
+		6BD542D71EF110EE00F48C37 /* fbOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542A21EF110EE00F48C37 /* fbOn@2x.png */; };
+		6BD542D81EF110EE00F48C37 /* Fugoukaku.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542A31EF110EE00F48C37 /* Fugoukaku.png */; };
+		6BD542D91EF110EE00F48C37 /* Fugoukaku@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542A41EF110EE00F48C37 /* Fugoukaku@2x.png */; };
+		6BD542DA1EF110EE00F48C37 /* Goukaku.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542A51EF110EE00F48C37 /* Goukaku.png */; };
+		6BD542DB1EF110EE00F48C37 /* Goukaku@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542A61EF110EE00F48C37 /* Goukaku@2x.png */; };
+		6BD542DC1EF110EE00F48C37 /* Icon in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542A71EF110EE00F48C37 /* Icon */; };
+		6BD542DD1EF110EE00F48C37 /* icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542A81EF110EE00F48C37 /* icon-120.png */; };
+		6BD542DE1EF110EE00F48C37 /* icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542A91EF110EE00F48C37 /* icon-152.png */; };
+		6BD542DF1EF110EE00F48C37 /* icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542AA1EF110EE00F48C37 /* icon-29.png */; };
+		6BD542E01EF110EE00F48C37 /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542AB1EF110EE00F48C37 /* icon-40.png */; };
+		6BD542E11EF110EE00F48C37 /* icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542AC1EF110EE00F48C37 /* icon-58.png */; };
+		6BD542E21EF110EE00F48C37 /* icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542AD1EF110EE00F48C37 /* icon-76.png */; };
+		6BD542E31EF110EE00F48C37 /* icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542AE1EF110EE00F48C37 /* icon-80.png */; };
+		6BD542E41EF110EE00F48C37 /* icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542AF1EF110EE00F48C37 /* icon-87.png */; };
+		6BD542E51EF110EE00F48C37 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542B01EF110EE00F48C37 /* icon.png */; };
+		6BD542E61EF110EE00F48C37 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542B11EF110EE00F48C37 /* icon@2x.png */; };
+		6BD542E71EF110EE00F48C37 /* icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542B21EF110EE00F48C37 /* icon@3x.png */; };
+		6BD542E81EF110EE00F48C37 /* kaisetsuBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542B31EF110EE00F48C37 /* kaisetsuBG.png */; };
+		6BD542E91EF110EE00F48C37 /* kaisetsuBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542B41EF110EE00F48C37 /* kaisetsuBG@2x.png */; };
+		6BD542EA1EF110EE00F48C37 /* kenteiBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542B51EF110EE00F48C37 /* kenteiBack.png */; };
+		6BD542EB1EF110EE00F48C37 /* kenteiBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542B61EF110EE00F48C37 /* kenteiBack@2x.png */; };
+		6BD542EC1EF110EE00F48C37 /* kenteiBackOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542B71EF110EE00F48C37 /* kenteiBackOn.png */; };
+		6BD542ED1EF110EE00F48C37 /* kenteiBackOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542B81EF110EE00F48C37 /* kenteiBackOn@2x.png */; };
+		6BD542EE1EF110EE00F48C37 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542B91EF110EE00F48C37 /* logo.png */; };
+		6BD542EF1EF110EE00F48C37 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542BA1EF110EE00F48C37 /* logo@2x.png */; };
+		6BD542F01EF110EE00F48C37 /* maru.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542BB1EF110EE00F48C37 /* maru.png */; };
+		6BD542F11EF110EE00F48C37 /* maru@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542BC1EF110EE00F48C37 /* maru@2x.png */; };
+		6BD542F21EF110EE00F48C37 /* mondai_back_ground.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542BD1EF110EE00F48C37 /* mondai_back_ground.png */; };
+		6BD542F31EF110EE00F48C37 /* mondai_back_ground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542BE1EF110EE00F48C37 /* mondai_back_ground@2x.png */; };
+		6BD542F41EF110EE00F48C37 /* okBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542BF1EF110EE00F48C37 /* okBtn.png */; };
+		6BD542F51EF110EE00F48C37 /* QuizeKaisetsuCloseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542C01EF110EE00F48C37 /* QuizeKaisetsuCloseBtn.png */; };
+		6BD542F61EF110EE00F48C37 /* QuizeKaisetsuCloseBtnOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542C11EF110EE00F48C37 /* QuizeKaisetsuCloseBtnOn.png */; };
+		6BD542F71EF110EE00F48C37 /* scoreBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542C21EF110EE00F48C37 /* scoreBG.png */; };
+		6BD542F81EF110EE00F48C37 /* scoreBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542C31EF110EE00F48C37 /* scoreBG@2x.png */; };
+		6BD542F91EF110EE00F48C37 /* top_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542C41EF110EE00F48C37 /* top_image.png */; };
+		6BD542FA1EF110EE00F48C37 /* top_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542C51EF110EE00F48C37 /* top_image@2x.png */; };
+		6BD542FB1EF110EE00F48C37 /* twOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542C61EF110EE00F48C37 /* twOff.png */; };
+		6BD542FC1EF110EE00F48C37 /* twOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542C71EF110EE00F48C37 /* twOff@2x.png */; };
+		6BD542FD1EF110EE00F48C37 /* twOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542C81EF110EE00F48C37 /* twOn.png */; };
+		6BD542FE1EF110EE00F48C37 /* twOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542C91EF110EE00F48C37 /* twOn@2x.png */; };
+		6BD542FF1EF110EE00F48C37 /* Icon in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542CB1EF110EE00F48C37 /* Icon */; };
+		6BD543001EF110EE00F48C37 /* mistake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542CC1EF110EE00F48C37 /* mistake.mp3 */; };
+		6BD543011EF110EE00F48C37 /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6BD542CD1EF110EE00F48C37 /* right.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BD5426A1EF0EDBB00F48C37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BD5424D1EF0EDBA00F48C37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BD542541EF0EDBA00F48C37;
+			remoteInfo = "Kentei-iOS";
+		};
+		6BD542751EF0EDBB00F48C37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BD5424D1EF0EDBA00F48C37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BD542541EF0EDBA00F48C37;
+			remoteInfo = "Kentei-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6BD542551EF0EDBA00F48C37 /* Kentei-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kentei-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD542581EF0EDBA00F48C37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BD5425A1EF0EDBA00F48C37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BD5425D1EF0EDBA00F48C37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BD5425F1EF0EDBB00F48C37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6BD542621EF0EDBB00F48C37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6BD542641EF0EDBB00F48C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BD542691EF0EDBB00F48C37 /* Kentei-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kentei-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD5426D1EF0EDBB00F48C37 /* Kentei_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kentei_iOSTests.swift; sourceTree = "<group>"; };
+		6BD5426F1EF0EDBB00F48C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BD542741EF0EDBB00F48C37 /* Kentei-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kentei-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD542781EF0EDBB00F48C37 /* Kentei_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kentei_iOSUITests.swift; sourceTree = "<group>"; };
+		6BD5427A1EF0EDBB00F48C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BD5428C1EF0F01300F48C37 /* KenteiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenteiViewController.swift; sourceTree = "<group>"; };
+		6BD5428E1EF0F04500F48C37 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		6BD542921EF110CD00F48C37 /* Icon */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Icon"; sourceTree = "<group>"; };
+		6BD542931EF110CD00F48C37 /* kentei.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kentei.csv; sourceTree = "<group>"; };
+		6BD542941EF110CD00F48C37 /* start.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.csv; sourceTree = "<group>"; };
+		6BD542991EF110EE00F48C37 /* batsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batsu.png; sourceTree = "<group>"; };
+		6BD5429A1EF110EE00F48C37 /* batsu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "batsu@2x.png"; sourceTree = "<group>"; };
+		6BD5429B1EF110EE00F48C37 /* btn_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_off.png; sourceTree = "<group>"; };
+		6BD5429C1EF110EE00F48C37 /* btn_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_off@2x.png"; sourceTree = "<group>"; };
+		6BD5429D1EF110EE00F48C37 /* btn_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_on.png; sourceTree = "<group>"; };
+		6BD5429E1EF110EE00F48C37 /* btn_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_on@2x.png"; sourceTree = "<group>"; };
+		6BD5429F1EF110EE00F48C37 /* fbOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fbOff.png; sourceTree = "<group>"; };
+		6BD542A01EF110EE00F48C37 /* fbOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fbOff@2x.png"; sourceTree = "<group>"; };
+		6BD542A11EF110EE00F48C37 /* fbOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fbOn.png; sourceTree = "<group>"; };
+		6BD542A21EF110EE00F48C37 /* fbOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fbOn@2x.png"; sourceTree = "<group>"; };
+		6BD542A31EF110EE00F48C37 /* Fugoukaku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fugoukaku.png; sourceTree = "<group>"; };
+		6BD542A41EF110EE00F48C37 /* Fugoukaku@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fugoukaku@2x.png"; sourceTree = "<group>"; };
+		6BD542A51EF110EE00F48C37 /* Goukaku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Goukaku.png; sourceTree = "<group>"; };
+		6BD542A61EF110EE00F48C37 /* Goukaku@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Goukaku@2x.png"; sourceTree = "<group>"; };
+		6BD542A71EF110EE00F48C37 /* Icon */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Icon"; sourceTree = "<group>"; };
+		6BD542A81EF110EE00F48C37 /* icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-120.png"; sourceTree = "<group>"; };
+		6BD542A91EF110EE00F48C37 /* icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-152.png"; sourceTree = "<group>"; };
+		6BD542AA1EF110EE00F48C37 /* icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-29.png"; sourceTree = "<group>"; };
+		6BD542AB1EF110EE00F48C37 /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
+		6BD542AC1EF110EE00F48C37 /* icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-58.png"; sourceTree = "<group>"; };
+		6BD542AD1EF110EE00F48C37 /* icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76.png"; sourceTree = "<group>"; };
+		6BD542AE1EF110EE00F48C37 /* icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-80.png"; sourceTree = "<group>"; };
+		6BD542AF1EF110EE00F48C37 /* icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-87.png"; sourceTree = "<group>"; };
+		6BD542B01EF110EE00F48C37 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		6BD542B11EF110EE00F48C37 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		6BD542B21EF110EE00F48C37 /* icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@3x.png"; sourceTree = "<group>"; };
+		6BD542B31EF110EE00F48C37 /* kaisetsuBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaisetsuBG.png; sourceTree = "<group>"; };
+		6BD542B41EF110EE00F48C37 /* kaisetsuBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kaisetsuBG@2x.png"; sourceTree = "<group>"; };
+		6BD542B51EF110EE00F48C37 /* kenteiBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kenteiBack.png; sourceTree = "<group>"; };
+		6BD542B61EF110EE00F48C37 /* kenteiBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kenteiBack@2x.png"; sourceTree = "<group>"; };
+		6BD542B71EF110EE00F48C37 /* kenteiBackOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kenteiBackOn.png; sourceTree = "<group>"; };
+		6BD542B81EF110EE00F48C37 /* kenteiBackOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kenteiBackOn@2x.png"; sourceTree = "<group>"; };
+		6BD542B91EF110EE00F48C37 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		6BD542BA1EF110EE00F48C37 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		6BD542BB1EF110EE00F48C37 /* maru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maru.png; sourceTree = "<group>"; };
+		6BD542BC1EF110EE00F48C37 /* maru@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maru@2x.png"; sourceTree = "<group>"; };
+		6BD542BD1EF110EE00F48C37 /* mondai_back_ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mondai_back_ground.png; sourceTree = "<group>"; };
+		6BD542BE1EF110EE00F48C37 /* mondai_back_ground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mondai_back_ground@2x.png"; sourceTree = "<group>"; };
+		6BD542BF1EF110EE00F48C37 /* okBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = okBtn.png; sourceTree = "<group>"; };
+		6BD542C01EF110EE00F48C37 /* QuizeKaisetsuCloseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuizeKaisetsuCloseBtn.png; sourceTree = "<group>"; };
+		6BD542C11EF110EE00F48C37 /* QuizeKaisetsuCloseBtnOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuizeKaisetsuCloseBtnOn.png; sourceTree = "<group>"; };
+		6BD542C21EF110EE00F48C37 /* scoreBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scoreBG.png; sourceTree = "<group>"; };
+		6BD542C31EF110EE00F48C37 /* scoreBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scoreBG@2x.png"; sourceTree = "<group>"; };
+		6BD542C41EF110EE00F48C37 /* top_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top_image.png; sourceTree = "<group>"; };
+		6BD542C51EF110EE00F48C37 /* top_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top_image@2x.png"; sourceTree = "<group>"; };
+		6BD542C61EF110EE00F48C37 /* twOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twOff.png; sourceTree = "<group>"; };
+		6BD542C71EF110EE00F48C37 /* twOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twOff@2x.png"; sourceTree = "<group>"; };
+		6BD542C81EF110EE00F48C37 /* twOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twOn.png; sourceTree = "<group>"; };
+		6BD542C91EF110EE00F48C37 /* twOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twOn@2x.png"; sourceTree = "<group>"; };
+		6BD542CB1EF110EE00F48C37 /* Icon */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Icon"; sourceTree = "<group>"; };
+		6BD542CC1EF110EE00F48C37 /* mistake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mistake.mp3; sourceTree = "<group>"; };
+		6BD542CD1EF110EE00F48C37 /* right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = right.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BD542521EF0EDBA00F48C37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD542661EF0EDBB00F48C37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD542711EF0EDBB00F48C37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BD5424C1EF0EDBA00F48C37 = {
+			isa = PBXGroup;
+			children = (
+				6BD542571EF0EDBA00F48C37 /* Kentei-iOS */,
+				6BD5426C1EF0EDBB00F48C37 /* Kentei-iOSTests */,
+				6BD542771EF0EDBB00F48C37 /* Kentei-iOSUITests */,
+				6BD542561EF0EDBA00F48C37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BD542561EF0EDBA00F48C37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BD542551EF0EDBA00F48C37 /* Kentei-iOS.app */,
+				6BD542691EF0EDBB00F48C37 /* Kentei-iOSTests.xctest */,
+				6BD542741EF0EDBB00F48C37 /* Kentei-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BD542571EF0EDBA00F48C37 /* Kentei-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6BD542CA1EF110EE00F48C37 /* se */,
+				6BD542981EF110EE00F48C37 /* images */,
+				6BD542911EF110CD00F48C37 /* csv */,
+				6BD542581EF0EDBA00F48C37 /* AppDelegate.swift */,
+				6BD5425A1EF0EDBA00F48C37 /* ViewController.swift */,
+				6BD5425C1EF0EDBA00F48C37 /* Main.storyboard */,
+				6BD5428C1EF0F01300F48C37 /* KenteiViewController.swift */,
+				6BD5428E1EF0F04500F48C37 /* ScoreViewController.swift */,
+				6BD5425F1EF0EDBB00F48C37 /* Assets.xcassets */,
+				6BD542611EF0EDBB00F48C37 /* LaunchScreen.storyboard */,
+				6BD542641EF0EDBB00F48C37 /* Info.plist */,
+			);
+			path = "Kentei-iOS";
+			sourceTree = "<group>";
+		};
+		6BD5426C1EF0EDBB00F48C37 /* Kentei-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BD5426D1EF0EDBB00F48C37 /* Kentei_iOSTests.swift */,
+				6BD5426F1EF0EDBB00F48C37 /* Info.plist */,
+			);
+			path = "Kentei-iOSTests";
+			sourceTree = "<group>";
+		};
+		6BD542771EF0EDBB00F48C37 /* Kentei-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6BD542781EF0EDBB00F48C37 /* Kentei_iOSUITests.swift */,
+				6BD5427A1EF0EDBB00F48C37 /* Info.plist */,
+			);
+			path = "Kentei-iOSUITests";
+			sourceTree = "<group>";
+		};
+		6BD542911EF110CD00F48C37 /* csv */ = {
+			isa = PBXGroup;
+			children = (
+				6BD542921EF110CD00F48C37 /* Icon */,
+				6BD542931EF110CD00F48C37 /* kentei.csv */,
+				6BD542941EF110CD00F48C37 /* start.csv */,
+			);
+			path = csv;
+			sourceTree = "<group>";
+		};
+		6BD542981EF110EE00F48C37 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6BD542991EF110EE00F48C37 /* batsu.png */,
+				6BD5429A1EF110EE00F48C37 /* batsu@2x.png */,
+				6BD5429B1EF110EE00F48C37 /* btn_off.png */,
+				6BD5429C1EF110EE00F48C37 /* btn_off@2x.png */,
+				6BD5429D1EF110EE00F48C37 /* btn_on.png */,
+				6BD5429E1EF110EE00F48C37 /* btn_on@2x.png */,
+				6BD5429F1EF110EE00F48C37 /* fbOff.png */,
+				6BD542A01EF110EE00F48C37 /* fbOff@2x.png */,
+				6BD542A11EF110EE00F48C37 /* fbOn.png */,
+				6BD542A21EF110EE00F48C37 /* fbOn@2x.png */,
+				6BD542A31EF110EE00F48C37 /* Fugoukaku.png */,
+				6BD542A41EF110EE00F48C37 /* Fugoukaku@2x.png */,
+				6BD542A51EF110EE00F48C37 /* Goukaku.png */,
+				6BD542A61EF110EE00F48C37 /* Goukaku@2x.png */,
+				6BD542A71EF110EE00F48C37 /* Icon */,
+				6BD542A81EF110EE00F48C37 /* icon-120.png */,
+				6BD542A91EF110EE00F48C37 /* icon-152.png */,
+				6BD542AA1EF110EE00F48C37 /* icon-29.png */,
+				6BD542AB1EF110EE00F48C37 /* icon-40.png */,
+				6BD542AC1EF110EE00F48C37 /* icon-58.png */,
+				6BD542AD1EF110EE00F48C37 /* icon-76.png */,
+				6BD542AE1EF110EE00F48C37 /* icon-80.png */,
+				6BD542AF1EF110EE00F48C37 /* icon-87.png */,
+				6BD542B01EF110EE00F48C37 /* icon.png */,
+				6BD542B11EF110EE00F48C37 /* icon@2x.png */,
+				6BD542B21EF110EE00F48C37 /* icon@3x.png */,
+				6BD542B31EF110EE00F48C37 /* kaisetsuBG.png */,
+				6BD542B41EF110EE00F48C37 /* kaisetsuBG@2x.png */,
+				6BD542B51EF110EE00F48C37 /* kenteiBack.png */,
+				6BD542B61EF110EE00F48C37 /* kenteiBack@2x.png */,
+				6BD542B71EF110EE00F48C37 /* kenteiBackOn.png */,
+				6BD542B81EF110EE00F48C37 /* kenteiBackOn@2x.png */,
+				6BD542B91EF110EE00F48C37 /* logo.png */,
+				6BD542BA1EF110EE00F48C37 /* logo@2x.png */,
+				6BD542BB1EF110EE00F48C37 /* maru.png */,
+				6BD542BC1EF110EE00F48C37 /* maru@2x.png */,
+				6BD542BD1EF110EE00F48C37 /* mondai_back_ground.png */,
+				6BD542BE1EF110EE00F48C37 /* mondai_back_ground@2x.png */,
+				6BD542BF1EF110EE00F48C37 /* okBtn.png */,
+				6BD542C01EF110EE00F48C37 /* QuizeKaisetsuCloseBtn.png */,
+				6BD542C11EF110EE00F48C37 /* QuizeKaisetsuCloseBtnOn.png */,
+				6BD542C21EF110EE00F48C37 /* scoreBG.png */,
+				6BD542C31EF110EE00F48C37 /* scoreBG@2x.png */,
+				6BD542C41EF110EE00F48C37 /* top_image.png */,
+				6BD542C51EF110EE00F48C37 /* top_image@2x.png */,
+				6BD542C61EF110EE00F48C37 /* twOff.png */,
+				6BD542C71EF110EE00F48C37 /* twOff@2x.png */,
+				6BD542C81EF110EE00F48C37 /* twOn.png */,
+				6BD542C91EF110EE00F48C37 /* twOn@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		6BD542CA1EF110EE00F48C37 /* se */ = {
+			isa = PBXGroup;
+			children = (
+				6BD542CB1EF110EE00F48C37 /* Icon */,
+				6BD542CC1EF110EE00F48C37 /* mistake.mp3 */,
+				6BD542CD1EF110EE00F48C37 /* right.mp3 */,
+			);
+			path = se;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BD542541EF0EDBA00F48C37 /* Kentei-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BD5427D1EF0EDBB00F48C37 /* Build configuration list for PBXNativeTarget "Kentei-iOS" */;
+			buildPhases = (
+				6BD542511EF0EDBA00F48C37 /* Sources */,
+				6BD542521EF0EDBA00F48C37 /* Frameworks */,
+				6BD542531EF0EDBA00F48C37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kentei-iOS";
+			productName = "Kentei-iOS";
+			productReference = 6BD542551EF0EDBA00F48C37 /* Kentei-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BD542681EF0EDBB00F48C37 /* Kentei-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BD542801EF0EDBB00F48C37 /* Build configuration list for PBXNativeTarget "Kentei-iOSTests" */;
+			buildPhases = (
+				6BD542651EF0EDBB00F48C37 /* Sources */,
+				6BD542661EF0EDBB00F48C37 /* Frameworks */,
+				6BD542671EF0EDBB00F48C37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BD5426B1EF0EDBB00F48C37 /* PBXTargetDependency */,
+			);
+			name = "Kentei-iOSTests";
+			productName = "Kentei-iOSTests";
+			productReference = 6BD542691EF0EDBB00F48C37 /* Kentei-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6BD542731EF0EDBB00F48C37 /* Kentei-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BD542831EF0EDBB00F48C37 /* Build configuration list for PBXNativeTarget "Kentei-iOSUITests" */;
+			buildPhases = (
+				6BD542701EF0EDBB00F48C37 /* Sources */,
+				6BD542711EF0EDBB00F48C37 /* Frameworks */,
+				6BD542721EF0EDBB00F48C37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BD542761EF0EDBB00F48C37 /* PBXTargetDependency */,
+			);
+			name = "Kentei-iOSUITests";
+			productName = "Kentei-iOSUITests";
+			productReference = 6BD542741EF0EDBB00F48C37 /* Kentei-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BD5424D1EF0EDBA00F48C37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = dev01;
+				TargetAttributes = {
+					6BD542541EF0EDBA00F48C37 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					6BD542681EF0EDBB00F48C37 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6BD542541EF0EDBA00F48C37;
+					};
+					6BD542731EF0EDBB00F48C37 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6BD542541EF0EDBA00F48C37;
+					};
+				};
+			};
+			buildConfigurationList = 6BD542501EF0EDBA00F48C37 /* Build configuration list for PBXProject "Kentei-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BD5424C1EF0EDBA00F48C37;
+			productRefGroup = 6BD542561EF0EDBA00F48C37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BD542541EF0EDBA00F48C37 /* Kentei-iOS */,
+				6BD542681EF0EDBB00F48C37 /* Kentei-iOSTests */,
+				6BD542731EF0EDBB00F48C37 /* Kentei-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BD542531EF0EDBA00F48C37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD542DD1EF110EE00F48C37 /* icon-120.png in Resources */,
+				6BD542D01EF110EE00F48C37 /* btn_off.png in Resources */,
+				6BD542F61EF110EE00F48C37 /* QuizeKaisetsuCloseBtnOn.png in Resources */,
+				6BD543001EF110EE00F48C37 /* mistake.mp3 in Resources */,
+				6BD542CF1EF110EE00F48C37 /* batsu@2x.png in Resources */,
+				6BD542D21EF110EE00F48C37 /* btn_on.png in Resources */,
+				6BD542F31EF110EE00F48C37 /* mondai_back_ground@2x.png in Resources */,
+				6BD542971EF110CD00F48C37 /* start.csv in Resources */,
+				6BD542D41EF110EE00F48C37 /* fbOff.png in Resources */,
+				6BD542F41EF110EE00F48C37 /* okBtn.png in Resources */,
+				6BD542961EF110CD00F48C37 /* kentei.csv in Resources */,
+				6BD542EB1EF110EE00F48C37 /* kenteiBack@2x.png in Resources */,
+				6BD542D81EF110EE00F48C37 /* Fugoukaku.png in Resources */,
+				6BD542E21EF110EE00F48C37 /* icon-76.png in Resources */,
+				6BD542E81EF110EE00F48C37 /* kaisetsuBG.png in Resources */,
+				6BD542F81EF110EE00F48C37 /* scoreBG@2x.png in Resources */,
+				6BD542DE1EF110EE00F48C37 /* icon-152.png in Resources */,
+				6BD542E61EF110EE00F48C37 /* icon@2x.png in Resources */,
+				6BD542F11EF110EE00F48C37 /* maru@2x.png in Resources */,
+				6BD542FC1EF110EE00F48C37 /* twOff@2x.png in Resources */,
+				6BD542E11EF110EE00F48C37 /* icon-58.png in Resources */,
+				6BD542D51EF110EE00F48C37 /* fbOff@2x.png in Resources */,
+				6BD542631EF0EDBB00F48C37 /* LaunchScreen.storyboard in Resources */,
+				6BD542E41EF110EE00F48C37 /* icon-87.png in Resources */,
+				6BD542EC1EF110EE00F48C37 /* kenteiBackOn.png in Resources */,
+				6BD542ED1EF110EE00F48C37 /* kenteiBackOn@2x.png in Resources */,
+				6BD542D91EF110EE00F48C37 /* Fugoukaku@2x.png in Resources */,
+				6BD542D11EF110EE00F48C37 /* btn_off@2x.png in Resources */,
+				6BD542FA1EF110EE00F48C37 /* top_image@2x.png in Resources */,
+				6BD542E91EF110EE00F48C37 /* kaisetsuBG@2x.png in Resources */,
+				6BD542FD1EF110EE00F48C37 /* twOn.png in Resources */,
+				6BD542E01EF110EE00F48C37 /* icon-40.png in Resources */,
+				6BD542F01EF110EE00F48C37 /* maru.png in Resources */,
+				6BD542F51EF110EE00F48C37 /* QuizeKaisetsuCloseBtn.png in Resources */,
+				6BD542E71EF110EE00F48C37 /* icon@3x.png in Resources */,
+				6BD542F91EF110EE00F48C37 /* top_image.png in Resources */,
+				6BD542DA1EF110EE00F48C37 /* Goukaku.png in Resources */,
+				6BD543011EF110EE00F48C37 /* right.mp3 in Resources */,
+				6BD542FB1EF110EE00F48C37 /* twOff.png in Resources */,
+				6BD542EF1EF110EE00F48C37 /* logo@2x.png in Resources */,
+				6BD542951EF110CD00F48C37 /* Icon in Resources */,
+				6BD542FE1EF110EE00F48C37 /* twOn@2x.png in Resources */,
+				6BD542EE1EF110EE00F48C37 /* logo.png in Resources */,
+				6BD542601EF0EDBB00F48C37 /* Assets.xcassets in Resources */,
+				6BD542F71EF110EE00F48C37 /* scoreBG.png in Resources */,
+				6BD542FF1EF110EE00F48C37 /* Icon in Resources */,
+				6BD542DB1EF110EE00F48C37 /* Goukaku@2x.png in Resources */,
+				6BD542DC1EF110EE00F48C37 /* Icon in Resources */,
+				6BD542D61EF110EE00F48C37 /* fbOn.png in Resources */,
+				6BD542F21EF110EE00F48C37 /* mondai_back_ground.png in Resources */,
+				6BD542CE1EF110EE00F48C37 /* batsu.png in Resources */,
+				6BD542D71EF110EE00F48C37 /* fbOn@2x.png in Resources */,
+				6BD542E31EF110EE00F48C37 /* icon-80.png in Resources */,
+				6BD542E51EF110EE00F48C37 /* icon.png in Resources */,
+				6BD542EA1EF110EE00F48C37 /* kenteiBack.png in Resources */,
+				6BD542D31EF110EE00F48C37 /* btn_on@2x.png in Resources */,
+				6BD5425E1EF0EDBA00F48C37 /* Main.storyboard in Resources */,
+				6BD542DF1EF110EE00F48C37 /* icon-29.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD542671EF0EDBB00F48C37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD542721EF0EDBB00F48C37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BD542511EF0EDBA00F48C37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD5428D1EF0F01300F48C37 /* KenteiViewController.swift in Sources */,
+				6BD5425B1EF0EDBA00F48C37 /* ViewController.swift in Sources */,
+				6BD542591EF0EDBA00F48C37 /* AppDelegate.swift in Sources */,
+				6BD5428F1EF0F04500F48C37 /* ScoreViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD542651EF0EDBB00F48C37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD5426E1EF0EDBB00F48C37 /* Kentei_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD542701EF0EDBB00F48C37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD542791EF0EDBB00F48C37 /* Kentei_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BD5426B1EF0EDBB00F48C37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BD542541EF0EDBA00F48C37 /* Kentei-iOS */;
+			targetProxy = 6BD5426A1EF0EDBB00F48C37 /* PBXContainerItemProxy */;
+		};
+		6BD542761EF0EDBB00F48C37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BD542541EF0EDBA00F48C37 /* Kentei-iOS */;
+			targetProxy = 6BD542751EF0EDBB00F48C37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BD5425C1EF0EDBA00F48C37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BD5425D1EF0EDBA00F48C37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6BD542611EF0EDBB00F48C37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BD542621EF0EDBB00F48C37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BD5427B1EF0EDBB00F48C37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6BD5427C1EF0EDBB00F48C37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BD5427E1EF0EDBB00F48C37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Kentei-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev01.Kentei-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6BD5427F1EF0EDBB00F48C37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Kentei-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev01.Kentei-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6BD542811EF0EDBB00F48C37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Kentei-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev01.Kentei-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kentei-iOS.app/Kentei-iOS";
+			};
+			name = Debug;
+		};
+		6BD542821EF0EDBB00F48C37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Kentei-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev01.Kentei-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kentei-iOS.app/Kentei-iOS";
+			};
+			name = Release;
+		};
+		6BD542841EF0EDBB00F48C37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Kentei-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev01.Kentei-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Kentei-iOS";
+			};
+			name = Debug;
+		};
+		6BD542851EF0EDBB00F48C37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Kentei-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev01.Kentei-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Kentei-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BD542501EF0EDBA00F48C37 /* Build configuration list for PBXProject "Kentei-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD5427B1EF0EDBB00F48C37 /* Debug */,
+				6BD5427C1EF0EDBB00F48C37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BD5427D1EF0EDBB00F48C37 /* Build configuration list for PBXNativeTarget "Kentei-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD5427E1EF0EDBB00F48C37 /* Debug */,
+				6BD5427F1EF0EDBB00F48C37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BD542801EF0EDBB00F48C37 /* Build configuration list for PBXNativeTarget "Kentei-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD542811EF0EDBB00F48C37 /* Debug */,
+				6BD542821EF0EDBB00F48C37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BD542831EF0EDBB00F48C37 /* Build configuration list for PBXNativeTarget "Kentei-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD542841EF0EDBB00F48C37 /* Debug */,
+				6BD542851EF0EDBB00F48C37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BD5424D1EF0EDBA00F48C37 /* Project object */;
+}
