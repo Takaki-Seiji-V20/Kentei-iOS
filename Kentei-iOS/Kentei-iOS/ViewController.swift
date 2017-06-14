@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyTextView: UITextView!
-    //@IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var startButon: UIButton!
     @IBOutlet weak var creditLabel: UILabel!
     
     override func viewDidLoad() {

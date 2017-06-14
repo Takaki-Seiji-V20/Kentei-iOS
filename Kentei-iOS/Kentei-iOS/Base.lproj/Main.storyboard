@@ -45,7 +45,7 @@
                                     <constraint firstAttribute="height" constant="100" id="Hd2-oI-ug7"/>
                                     <constraint firstAttribute="width" constant="250" id="O4b-6X-n7n"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -59,23 +59,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orO-Ph-MsF">
+                                <rect key="frame" x="10" y="484" width="300" height="40"/>
+                                <state key="normal" title="スタート" backgroundImage="btn_on.png"/>
+                                <connections>
+                                    <segue destination="fJs-Ax-459" kind="presentation" id="poR-XQ-CIk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="orO-Ph-MsF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="220" id="1KT-7S-F32"/>
                             <constraint firstItem="sBH-Yl-4N1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="ANa-K6-OIJ"/>
                             <constraint firstItem="Lor-PQ-oxv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="270" id="BKQ-dj-dtk"/>
                             <constraint firstItem="zlE-bH-Vkw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-90" id="IMq-Rt-mXT"/>
                             <constraint firstItem="zlE-bH-Vkw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RSg-E7-AgJ"/>
                             <constraint firstItem="KGZ-WL-ZMk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="150" id="UzV-tm-3zg"/>
+                            <constraint firstItem="orO-Ph-MsF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hcx-uO-NQv"/>
                             <constraint firstItem="KGZ-WL-ZMk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="omy-EH-Mdy"/>
                             <constraint firstItem="sBH-Yl-4N1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rHe-qv-6g9"/>
                             <constraint firstItem="Lor-PQ-oxv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rdf-7B-dd6"/>
+                            <constraint firstItem="orO-Ph-MsF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="220" id="ujL-RH-IqC"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bodyTextView" destination="KGZ-WL-ZMk" id="3kM-Lu-NNu"/>
                         <outlet property="creditLabel" destination="Lor-PQ-oxv" id="jTN-50-fwc"/>
                         <outlet property="logoImageView" destination="zlE-bH-Vkw" id="gh3-DB-9fb"/>
+                        <outlet property="startButon" destination="orO-Ph-MsF" id="WCP-OM-zTt"/>
                         <outlet property="titleLabel" destination="sBH-Yl-4N1" id="ccJ-jL-Tta"/>
                     </connections>
                 </viewController>
@@ -120,4 +131,7 @@
             <point key="canvasLocation" x="1804" y="36"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn_on.png" width="300" height="40"/>
+    </resources>
 </document>
